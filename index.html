@@ -1,11 +1,13 @@
 <html>
     <head>
-        <script src="main.js"></script>
+        <script src="main.js">
+        </script>
     </head>
     <link rel="stylesheet" href="main.css">
     <title>Psychology Revision</title>
     <body>
-        <h1 class="text"><u><center>Psychology Question Generator</center></u></h1>
+        <h1 class="text"><u><b><center>Psychology Revision</center></b></u></h1>
+        <h2 class="text"><u><center>Question Generator</center></u></h2>
         <form>
             <div class="topicCheckbox group">
             <input type="checkbox" name="memory" id="memory" value='memory'>
@@ -42,9 +44,18 @@
             <label for="aggression">Aggression</label>
             </div>
             <p id="result" class="question">Select a topic</p><br>
-            <input class="generateBtn" type="button" onclick="topics()" value="Generate Question!">
+            <input class="generateBtn" type="button" onclick="topics()" value="Generate Question!"><br>
             
         </form>
+        <h2 class="text"><u><center>AO1 Generator</center></u></h2>
+
+            <div class="topicCheckbox">
+            <input type="radio" onclick="displayTopics()" name="topic" id="memory" value="memory">Memory<br>
+            <input type="radio" onclick="displayTopics()" name="topic" id="social_influence" value="social_influence">Social Influence<br>
+<!--            <input type="radio" onclick="displayTopics()" name="topic" id="attachments" value="attachments">Attachments<br>-->
+            <p id="subtopic"></p>
+            </div>
+            <p id="content" class="question"></p><br>
+            <input class="generateBtn" type="button" onclick="generateNotes()" value="Generate Content">
     </body>
 </html>
- 
