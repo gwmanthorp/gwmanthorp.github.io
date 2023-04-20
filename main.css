@@ -32,17 +32,15 @@ body{
     position: static;
     display: block;
     margin-left: 50%;
+    vertical-align: middle;
     transform: translate(-50%, 0%);
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 .generateBtn{
     position: relative;
     display: block;
-}
-
-.topicCheckbox label{
-    font-size: 20px;
 }
 
 .question{
