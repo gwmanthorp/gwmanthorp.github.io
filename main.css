@@ -1,6 +1,7 @@
-body{
+html, body{
     background-color: #D2D6EF;
-    max-width: 800px;
+    max-width: 100%;
+    overflow-x: hidden;
     margin-left: 50%;
     transform: translate(-50%,0%);
 }
