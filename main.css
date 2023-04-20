@@ -1,3 +1,10 @@
+body{
+    background-color: #D2D6EF;
+    max-width: 800px;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+
 .text{
     color: 104547;
 }
