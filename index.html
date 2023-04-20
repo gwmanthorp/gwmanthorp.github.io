@@ -1,38 +1,51 @@
 <html>
-<body>
-
-<h2 style="color:green">Create a checkbox and get its value</h2>
-<h3> Are you a web developer? </h3>
-Yes: <input type="checkbox" id="myCheck1" value="Yes, I'm a web developer">
-No: <input type="checkbox" id="myCheck2" value="No, I'm not a web developer">
-<br> <br>
-<button onclick="checkCheckbox()">Submit</button> <br>
-
-<h4 style="color:green" id="result"></h3> 
-<h4 style="color:red" id="error"></h3> 
-
-<script>
-function checkCheckbox() {
-  var yes = document.getElementById("myCheck1");
-  var no = document.getElementById("myCheck2");
-  if (yes.checked == true && no.checked == true){
-    return document.getElementById("error").innerHTML = "Please mark only one checkbox either Yes or No";
-  }
-  else if (yes.checked == true){
-    var y = document.getElementById("myCheck1").value;
-    return document.getElementById("result").innerHTML = y; 
-  } 
-  else if (no.checked == true){
-    var n = document.getElementById("myCheck2").value;
-    return document.getElementById("result").innerHTML = n;
-  }
-  else {
-    return document.getElementById("error").innerHTML = "*Please mark any of checkbox";
-  }
-}
-</script>
-
-</body>
+    <head>
+        <script src="main.js"></script>
+    </head>
+    <link rel="stylesheet" href="main.css">
+    <title>Psychology Revision</title>
+    <body style="background-color:D2D6EF">
+        <h1 class="text"><u><center>Psychology Question Generator</center></u></h1>
+        <form>
+            <div class="topicCheckbox group">
+            <input type="checkbox" name="memory" id="memory" value='memory'>
+            <label for="memory">Memory</label><br>
+            
+            <input type="checkbox" id="social_influence" value='social_influence'>
+            <label for="social_influence">Social Influence</label><br>
+            
+            <input type="checkbox" id="attachments">
+            <label for="attachments">Attachments</label><br>
+            
+            <input type="checkbox" id="psychopathology">
+            <label for="psychopathology">Psychopathology</label><br>
+                
+            <input type="checkbox" id="approaches">
+            <label for="approaches">Approaches</label><br>
+                
+            <input type="checkbox" id="biopsychology">
+            <label for="biopsychology">Biopsychology</label><br>
+            
+            <input type="checkbox" id="research_methods">
+            <label for="research_methods">Research Methods</label><br>
+                
+            <input type="checkbox" id="issues_debates">
+            <label for="issues_debates">Issues Debates</label><br>
+                
+            <input type="checkbox" id="relationships">
+            <label for="relationships">Relationships</label><br>
+                
+            <input type="checkbox" id="schizophrenia">
+            <label for="schizophrenia">Schizophrenia</label><br>
+                
+            <input type="checkbox" id="aggression">
+            <label for="aggression">Aggression</label>
+            </div>
+            <p id="result" class="question"></p><br>
+            <input class="generateBtn" type="button" onclick="topics()" value="Generate Question!">
+            
+        </form>
+    </body>
 </html>
 
  
