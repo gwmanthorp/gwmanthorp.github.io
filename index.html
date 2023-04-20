@@ -50,12 +50,22 @@
         <h2 class="text"><u><center>AO1 Generator</center></u></h2>
 
             <div class="topicCheckbox">
-            <input type="radio" onclick="displayTopics()" name="topic" id="memory" value="memory">Memory<br>
-            <input type="radio" onclick="displayTopics()" name="topic" id="social_influence" value="social_influence">Social Influence<br>
+            <input type="radio" onclick="displayTopicsAO1()" name="topic" id="memory" value="memory">Memory<br>
+            <input type="radio" onclick="displayTopicsAO1()" name="topic" id="social_influence" value="social_influence">Social Influence<br>
 <!--            <input type="radio" onclick="displayTopics()" name="topic" id="attachments" value="attachments">Attachments<br>-->
             <p id="subtopic"></p>
             </div>
             <p id="content" class="question"></p><br>
-            <input class="generateBtn" type="button" onclick="generateNotes()" value="Generate Content">
+            <input class="generateBtn" type="button" onclick="generateAO1()" value="Generate AO1">
+        <h2 class="text"><u><center>AO3 Generator</center></u></h2>
+
+            <div class="topicCheckbox">
+            <input type="radio" onclick="displayTopicsAO3()" name="topicAO3" id="memory" value="memory">Memory<br>
+            <input type="radio" onclick="displayTopicsAO3()" name="topicAO3" id="social_influence" value="social_influence">Social Influence<br>
+            <input type="radio" onclick="displayTopicsAO3()" name="topicAO3" id="attachments" value="attachments">Attachments<br>
+            <p id="subtopicAO3"></p>
+            </div>
+            <p id="contentAO3" class="question"></p><br>
+            <input class="generateBtn" type="button" onclick="generateAO3()" value="Generate AO3">
     </body>
 </html>
