@@ -4,9 +4,11 @@ html{
 
 body{
     background-color: #D2D6EF;
-    max-width: 800px;
+    max-width: 100vw;
     min-height: 100vh;
-    margin: 0 auto;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0;
     
 }
 
@@ -14,16 +16,20 @@ body{
     color: 104547;
 }
 
+.title{
+    padding-top: 10px;
+}
+
 .generateBtn{
     position: absolute;
     margin-left: 50%;
     background-color: #12355B;
-    width: 100px;
+    width: 200px;
     border-style: none;
     color: aliceblue;
     text-align: center;
     padding: 10px 14px;
-    font-size: 16px; 
+    font-size: 22px; 
     border-radius: 12px;
     transition-duration: 0.2s;
     transform: translate(-50%,0%);
@@ -36,11 +42,10 @@ body{
 }
 
 .topicCheckbox{
-    position: static;
-    display: block;
-    margin-left: 50%;
+    position: flex;
+    flex-direction: column;
+    margin-left: 100px;
     vertical-align: middle;
-    transform: translate(-50%, 0%);
     padding-bottom: 15px;
     font-size: 20px;
 }
@@ -55,7 +60,7 @@ body{
     background-color: #FFFFFF;
     padding: 10px;
     border-radius: 12px;
-    margin-left: 50%;
     font-size: 20px;
-    transform: translate(-50%, 0%);
+    margin-left: 100px;
+    margin-right: 100px;
 }
