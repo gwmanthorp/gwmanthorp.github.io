@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="main.css">
     <title>Psychology Revision</title>
     <body>
-        <h1 class="text"><u><b><center>Psychology Revision</center></b></u></h1>
-        <h2 class="text"><u><center>Question Generator</center></u></h2>
+        <h1 class="text" style="font-size: 40px"><u><b><center>Psychology Revision</center></b></u></h1>
+        <div class="section">
+        <h2 class="text" style="font-size: 35px"><u><center>Question Generator</center></u></h2>
         <form>
             <div class="topicCheckbox group">
             <input type="checkbox" name="memory" id="memory" value='memory'>
@@ -47,7 +48,9 @@
             <input class="generateBtn" type="button" onclick="topics()" value="Generate Question!"><br>
             
         </form>
-        <h2 class="text"><u><center>AO1 Generator</center></u></h2>
+        </div><br>
+        <div class="section">
+        <h2 class="text" style="font-size: 35px"><u><center>AO1 Generator</center></u></h2>
 
             <div class="topicCheckbox">
             <input type="radio" onclick="displayTopicsAO1()" name="topic" id="memory" value="memory">Memory<br>
@@ -56,8 +59,11 @@
             <p id="subtopic"></p>
             </div>
             <p id="content" class="question"></p><br>
-            <input class="generateBtn" type="button" onclick="generateAO1()" value="Generate AO1">
-        <h2 class="text"><u><center>AO3 Generator</center></u></h2>
+            <input class="generateBtn" type="button" onclick="generateAO1()" value="Generate AO1"><br><br>
+        </div>
+            <br>
+        <div class="section">
+        <h2 class="text" style="font-size: 35px"><u><center>AO3 Generator</center></u></h2>
 
             <div class="topicCheckbox">
             <input type="radio" onclick="displayTopicsAO3()" name="topicAO3" id="memory" value="memory">Memory<br>
@@ -67,5 +73,7 @@
             </div>
             <p id="contentAO3" class="question"></p><br>
             <input class="generateBtn" type="button" onclick="generateAO3()" value="Generate AO3"><br>
+        </div>
+        <br><br>
     </body>
 </html>
