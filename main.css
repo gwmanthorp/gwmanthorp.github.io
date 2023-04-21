@@ -1,6 +1,7 @@
 body{
     background-color: #D2D6EF;
     overflow-x: hidden;
+    max-width: 400px;
 }
 
 .text{
