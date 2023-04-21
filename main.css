@@ -1,7 +1,12 @@
+html{
+    background-color: #9b9eb3;
+}
+
 body{
     background-color: #D2D6EF;
     overflow-x: hidden;
-    max-width: 400px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .text{
